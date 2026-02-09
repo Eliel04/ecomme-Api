@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 8px;
+    background-color: #0a0a0a;
+    color: #ededed;
+}
+#nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#list-container {
+  display: flex;
+}
+.anchor {
+    list-style-type: none;
+    font-weight: bold;
+}
+
+.link:hover{
+    text-decoration: underline;
+
+}
+.link {
+    cursor: pointer;
+}
