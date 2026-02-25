@@ -9,11 +9,13 @@ fetch("https://dummyjson.com/products")
     data.products.forEach(package => {
         console.log(data);
         const box = document.createElement("div");
+        box.className ="product-container";
         box.innerHTML = `
-            <img src="${package.thumbnail}" alt="${package.title}">
-            <h3><span class=product-title>Name:</span> ${package.title}</h3>
-            <p>Price: $${package.price}</p>
-            ${package.brand ? `<p>Brand: ${package.brand}</p>` : "Unknown Brand"}
+            <img src="${package.thumbnail}" alt="${package.title}" class="product-image">
+            <h3><span class="product-title spanbox">Name:</span> ${package.title}</h3>
+            <p><span class="product-category spanbox">Category:</span> ${package.category}</p>
+            <p> <span class="product-price spanbox">Price:</span> $${package.price}</p>
+            ${package.brand ? `<p> <span class="product-brand spanbox">Brand:</span> ${package.brand}</p>` : "Unknown Brand"}
             <button> Delete</button>
             <button> Buy Now</button>
         `;

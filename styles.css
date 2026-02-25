@@ -13,15 +13,26 @@
 #list-container {
   display: flex;
 }
-.anchor {
+.anchor-links {
     list-style-type: none;
-    font-weight: bold;
+    font-weight: bold;}
+.link {
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .link:hover{
     text-decoration: underline;
 
 }
-.link {
-    cursor: pointer;
+
+.product-image{
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.spanbox{
+    font-weight: bold;
+    font-size: 1.2rem;
 }
