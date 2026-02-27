@@ -8,6 +8,7 @@
 }
 .body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
 }
 #nav-bar {
     display: flex;
@@ -44,4 +45,10 @@
 .link:hover::before{
     width: 100%;
    
+}
+
+
+.footer{
+    margin-bottom: 24px;
+    text-align: center;
 }

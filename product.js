@@ -16,9 +16,10 @@ fetch("https://dummyjson.com/products")
             <p><span class="product-category spanbox-description">Category:</span> ${package.category}</p>
             <p> <span class="product-price spanbox-description">Price:</span> $${package.price}</p>
             ${package.brand ? `<p> <span class="product-brand spanbox-description">Brand:</span> ${package.brand}</p>` : "Unknown Brand"}
-             <button> Buy Now</button>
-            <button> Add to Cart</button>
-           
+            <div class="product-buttons">
+             <button class="buy-now-btn"> Buy Now</button>
+            <button class="add-to-cart-btn"> Add to Cart</button>
+           </div>
         `;
         document.getElementById("container").appendChild(box);
     })

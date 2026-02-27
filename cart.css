@@ -5,6 +5,13 @@
     background-color: #0a0a0a;
     color: #ededed;
 }
+body{
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    ;
+}
+
 #nav-bar {
     display: flex;
     justify-content: space-between;
@@ -49,4 +56,11 @@
     max-width: 400px;
     border: 2px solid #29abcd;
     border-radius: 10px;
+}
+
+
+
+.footer{
+    margin-bottom: 24px;
+    text-align: center;
 }
