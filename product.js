@@ -25,3 +25,15 @@ fetch("https://dummyjson.com/products")
     })
 })
 .catch(err => console.error(err));
+
+const sidebar = document.getElementById("sidebar-nav");
+const closeTag = document.querySelector(".close-tag");
+const menuTag = document.querySelector(".menu-tag");
+
+menuTag.addEventListener("click", () => {
+    sidebar.style.display = "block";
+});
+
+closeTag.addEventListener("click", () => {
+    sidebar.style.display = "none";
+});
